@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>KSR Suzuki XL6</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* HEADER */
+
+        header {
+            background-color: #003366;
+            color: white;
+
+            padding: 18px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+
+            margin-left: 25px;
+
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+
+        /* HERO SECTION */
+
+        .hero {
+
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.55)
+                ),
+
+                url("https://images.unsplash.cohttps://www.google.com/search?client=ms-android-motorola-rev2&hs=Es5&sca_esv=fca2f2dc8033dce8&sxsrf=APpeQnspi-29k7NLDhtXI6UGtV7mHz69Mw:1786469830077&udm=2&fbs=ABfTbFXXq5_lq1-qc-RNbCT-iVCv1pqpzFbsklS6H69T2lad0GTf_QfkL84T_NcuUjCLgDCbRiyLPwazvTtaoUDWQwNjaJB2HviD2SL3JLXDn41gnsELwGSH_1uQqsCV-qMHFYgdqNufZBgwXPPjySRqW2WxWUCi3a6x9eVV5gBTlSDzui2cfQWsmyy8L876_nIpUkbL6Nx1EZIFWSohgEzWhuPwiUCby298-5kjUCX2ZtBuDlyS1lI&q=xl6+red+car+for+a+website&sa=X&ved=2ahUKEwi1qv7cjpmWAxXRcWwGHao3GuAQtKgLegQIFRAB&biw=360&bih=681&dpr=3#sv=CAMSVxoyKhBlLTBlTmNmLU16Rk5WN2VNMg4wZU5jZi1NekZOVjdlTToOUVhQSFYxWlViSjI5N00gBCoXCgFzEhBlLTBlTmNmLU16Rk5WN2VNGAEwAUoECAEQAhgHIOjPqvYESggQAhgBIAIoAQm/photo-1542362567-b07e54358753")
+                center/cover;
+
+            height: 500px;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+        }
+
+
+        .hero-content {
+            color: white;
+        }
+
+
+        .hero h1 {
+
+            font-size: 50px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .hero h1 span {
+            color: #ff3333;
+        }
+
+
+        .hero p {
+
+            font-size: 22px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .price {
+
+            font-size: 28px;
+
+            font-weight: bold;
+
+            margin-bottom: 25px;
+        }
+
+
+        .button {
+
+            background-color: #ff3333;
+
+            color: white;
+
+            padding: 14px 28px;
+
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+        }
+
+
+        .button:hover {
+
+            background-color: #cc0000;
+        }
+
+
+        /* CAR INFORMATION */
+
+        .car-info {
+
+            background-color: white;
+
+            padding: 30px;
+
+            width: 85%;
+
+            max-width: 1000px;
+
+            margin: -60px auto 40px;
+
+            position: relative;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 5px 15px rgba(0,0,0,0.2);
+        }
+
+
+        .car-info h2 {
+
+            text-align: center;
+
+            color: #003366;
+
+            margin-bottom: 25px;
+        }
+
+
+        .info-row {
+
+            display: flex;
+
+            gap: 20px;
+
+            justify-content: center;
+        }
+
+
+        .info-box {
+
+            flex: 1;
+
+            text-align: center;
+
+            padding: 15px;
+
+            border-right: 1px solid #ddd;
+        }
+
+
+        .info-box:last-child {
+
+            border-right: none;
+        }
+
+
+        .info-box h3 {
+
+            color: #ff3333;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* FEATURES */
+
+        .features {
+
+            padding: 30px 8%;
+        }
+
+
+        .features h2 {
+
+            text-align: center;
+
+            color: #003366;
+
+            margin-bottom: 25px;
+        }
+
+
+        .feature-cards {
+
+            display: flex;
+
+            gap: 20px;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+        }
+
+
+        .feature-card {
+
+            background-color: white;
+
+            width: 250px;
+
+            padding: 25px;
+
+            text-align: center;
+
+            border-radius: 10px;
+
+            box-shadow:
+                0 3px 10px rgba(0,0,0,0.15);
+        }
+
+
+        .feature-card h3 {
+
+            color: #003366;
+
+            margin-bottom: 10px;
+        }
+
+
+        .feature-card p {
+
+            line-height: 1.5;
+
+            color: #555;
+        }
+
+
+        /* BOOKING SECTION */
+
+        .booking {
+
+            background-color: #003366;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 50px 20px;
+
+            margin-top: 40px;
+        }
+
+
+        .booking h2 {
+
+            font-size: 32px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .booking p {
+
+            margin-bottom: 25px;
+        }
+
+
+        .booking .button {
+
+            background-color: #ff3333;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+
+            background-color: #111;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 0;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            header {
+
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+
+            nav a {
+
+                margin: 0 8px;
+            }
+
+
+            .hero h1 {
+
+                font-size: 35px;
+            }
+
+
+            .hero p {
+
+                font-size: 18px;
+            }
+
+
+            .info-row {
+
+                flex-direction: column;
+            }
+
+
+            .info-box {
+
+                border-right: none;
+
+                border-bottom: 1px solid #ddd;
+            }
+
+
+            .info-box:last-child {
+
+                border-bottom: none;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            KSR Suzuki
+
+        </div>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#specifications">
+                Specifications
+            </a>
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#booking">
+                Book Now
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Suzuki
+                <span>XL6</span>
+
+            </h1>
+
+
+            <p>
+
+                Premium 6-Seater Family Car
+
+            </p>
+
+
+            <div class="price">
+
+                Starting from ₹11 Lakh*
+
+            </div>
+
+
+            <a href="#booking"
+               class="button">
+
+                Book Test Drive
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CAR INFORMATION -->
+
+    <section class="car-info"
+             id="specifications">
+
+        <h2>
+
+            Suzuki XL6 Specifications
+
+        </h2>
+
+
+        <div class="info-row">
+
+
+            <div class="info-box">
+
+                <h3>
+                    Engine
+                </h3>
+
+                <p>
+                    1.5L Petrol
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>
+                    Seating
+                </h3>
+
+                <p>
+                    6 Seater
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>
+                    Transmission
+                </h3>
+
+                <p>
+                    Manual / Automatic
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>
+                    Fuel
+                </h3>
+
+                <p>
+                    Petrol / CNG
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="features"
+             id="features">
+
+        <h2>
+
+            Suzuki XL6 Features
+
+        </h2>
+
+
+        <div class="feature-cards">
+
+
+            <div class="feature-card">
+
+                <h3>
+                    6-Seater
+                </h3>
+
+                <p>
+                    Comfortable captain seats
+                    for a premium family journey.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    Premium Interior
+                </h3>
+
+                <p>
+                    Stylish and spacious interior
+                    designed for comfortable travel.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    Smart Technology
+                </h3>
+
+                <p>
+                    Modern infotainment and
+                    connected features.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <h3>
+                    Safety
+                </h3>
+
+                <p>
+                    Multiple safety features
+                    for peace of mind.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- BOOKING -->
+
+    <section class="booking"
+             id="booking">
+
+        <h2>
+
+            Ready to Drive the XL6?
+
+        </h2>
+
+
+        <p>
+
+            Experience the comfort and style
+            of the Suzuki XL6.
+
+        </p>
+
+
+        <a href="tel:+919999999999"
+           class="button">
+
+            Call Now
+
+        </a>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+
+            © 2026 KSR Suzuki.
+            All Rights Reserved.
+
+        </p>
+
+
+        <p>
+
+            Drive Safe | Drive Happy
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
